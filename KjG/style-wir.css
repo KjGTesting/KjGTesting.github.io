@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'secca_kjgbold';
+    src: url('seccakjg-bd-webfont.woff2') format('woff2'),
+         url('seccakjg-bd-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.body{
+    font-family: secca_kjgbold;
+    font-weight: 900;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.logo-top {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 10px;
+    position:relative;
+}
+
+.menu-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    position: absolute; 
+    padding-top: 15px;
+    padding-left: 15px;
+}
+
+nav{
+    width: 15px;
+    height: 15px;
+    background-color: transparent;
+    padding-left: 25px;
+    z-index: 100;
+    position: fixed;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: top;
+}
+
+nav ul{
+    float: right;
+}
+
+nav ul li{
+    float: left;
+    list-style: none;
+    position: relative;
+}
+
+nav ul li a{
+    font-family: secca_kjgbold;
+    color: black;
+    font-size: large;
+    text-decoration: none;
+    font-weight: 900;
+    padding: 28px;
+    display: block;
+}
+
+nav ul li:hover ul{
+    display: block;
+
+    animation: menu-ani 0.5s   1 ease-in forwards;
+}
+
+
+nav ul li ul{
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    box-shadow: 3px 3px black;
+    padding: 7px;
+}
+
+nav ul li ul li a{
+    color: black;
+    padding-top: auto;
+    width: 180px;
+
+}
+
